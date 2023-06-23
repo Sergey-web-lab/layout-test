@@ -1,0 +1,82 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.block1 {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgBlock {
+  max-width: 976px;
+  position: relative;
+
+  &_margins {
+    margin-top: 72px;
+    margin-left: 56px;
+    margin-right: 36px;
+  }
+
+  &__tableTop {
+    max-width: inherit;
+    position: absolute;
+    max-width: 1476px;
+    left: -24.3%;
+    bottom: 24.1%;
+    animation-duration: 5s;
+    transition: bottom 5s linear;
+  }
+
+  &__tableBottom {
+    max-width: 1476px;
+    position: relative;
+    right: 237px;
+    bottom: 85px;
+  }
+
+  &__btnWrapper {
+    max-width: 474px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 555px;
+    left: 270px;
+  }
+
+  &__btns {
+    cursor: pointer;
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #A6FFFF;
+  }
+}
+
+.textBlock1 {
+  max-width: 500px;
+
+  &__title {
+    font-size: 62px;
+    color: #0B64FE;
+    font-weight: 100;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 170%;
+  }
+}
+
+.textBlock2 {
+  max-width: 500px;
+
+  &__text {
+    font-size: 22px;
+    line-height: 170%;
+  }
+}
