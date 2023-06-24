@@ -1,43 +1,52 @@
+html h1 {
+    margin: 0;
+}
+
+html p {
+    margin: 0;
+}
+
 .container {
-    max-width: 1920px;
+    max-width: 2000px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .block1 {
     font-family: "Ubuntu", sans-serif;
     display: flex;
     flex-wrap: wrap;
+    height: 900px;
 }
 
-.imgBlock {
+.block1__imgBlock {
     max-width: 976px;
     position: relative;
 }
 
-.imgBlock_margins {
+.block1__imgBlock_margins {
     margin-top: 72px;
     margin-left: 56px;
     margin-right: 36px;
 }
 
-.imgBlock__tableTop {
+.block1__imgBlock_tableTop {
     max-width: inherit;
     position: absolute;
     max-width: 1476px;
     left: -24.3%;
     bottom: 24.1%;
-    animation-duration: 5s;
-    transition: bottom 5s linear;
+    transition: bottom 0.8s linear;
 }
 
-.imgBlock__tableBottom {
+.block1__imgBlock_tableBottom {
     max-width: 1476px;
     position: relative;
     right: 237px;
     bottom: 85px;
 }
 
-.imgBlock__btnWrapper {
+.block1__imgBlock_btnWrapper {
     max-width: 474px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +55,7 @@
     left: 270px;
 }
 
-.imgBlock__btns {
+.block1__imgBlock_btns {
     cursor: pointer;
     font-size: 40px;
     width: 200px;
@@ -57,26 +66,190 @@
     background-color: #A6FFFF;
 }
 
-.textBlock1 {
+.block1__textBlock1 {
     max-width: 500px;
 }
 
-.textBlock1__title {
+.block1__textBlock1_title {
+    margin-top: 26px;
     font-size: 62px;
     color: #0B64FE;
     font-weight: 100;
 }
 
-.textBlock1__text {
+.block1__textBlock1_text {
+    margin-top: 46px;
     font-size: 22px;
     line-height: 170%;
 }
 
-.textBlock2 {
+.block1__textBlock2 {
     max-width: 500px;
 }
 
-.textBlock2__text {
+.block1__textBlock2_text {
+    margin-top: 35px;
     font-size: 22px;
     line-height: 170%;
+}
+
+.block2 {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../images/background.png");
+    background-size: 2000px;
+    background-color: #181818;
+    color: #FFF;
+    margin-top: 35px;
+    display: flex;
+}
+
+.block2__hiddeSpace {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-size: 2000px;
+    background-position-y: 14px;
+    background-position-x: 10px;
+    background-color: #181818;
+    position: absolute;
+    bottom: 0;
+    height: 96px;
+    width: 100%;
+    z-index: 3;
+}
+
+.block2__textBlock_wrapper {
+    max-width: 586px;
+}
+
+.block2__textBlock_wrapper_paddings {
+    padding-top: 72px;
+    padding-left: 100px;
+    padding-right: 56px;
+}
+
+.block2__textBlock1_title {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.block2__textBlock1_text {
+    margin-top: 72px;
+    font-size: 22px;
+    line-height: 170%;
+}
+
+.block2__textBlock1_text_span {
+    margin-top: 32px;
+    display: block;
+    margin-top: 30px;
+}
+
+.block2__textBlock2 {
+    position: relative;
+    padding-bottom: 172px;
+}
+
+.block2__textBlock2_text {
+    margin-top: 52px;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.block2__textBlock2_text_span {
+    margin-top: 25px;
+    font-size: 61px;
+    position: absolute;
+    width: 640px;
+    left: 55px;
+    z-index: 4;
+}
+
+.block2__imgBlock {
+    display: flex;
+}
+
+.block2__imgBlock_statuette {
+    width: 435px;
+    height: 790px;
+    animation: moveStatuetteUp 3s 1 2s, moveStatuette 3s infinite 5s alternate ease-in-out;
+    position: relative;
+    bottom: -800px;
+    z-index: 2;
+}
+
+@keyframes moveStatuetteUp {
+    from {
+        bottom: -800px;
+    }
+
+    to {
+        bottom: 150px;
+    }
+}
+
+@keyframes moveStatuette {
+    from {
+        bottom: 150px;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.block2__imgBlock_statuette_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block2__imgBlock_interface {
+    width: 842px;
+    height: 876px;
+}
+
+.block2__imgBlock_spotTop {
+    width: 194px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 100% 100% 0 0;
+    animation: spotTransformStart 3s 1, spotTransform 3s 1 2s;
+    z-index: 1;
+}
+
+.block2__imgBlock_spotBottom {
+    margin: 0 auto;
+    width: 194px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 0 0 100% 100%;
+    animation: spotTransformStart 3s 1, spotTransform 3s 1 2s;
+    z-index: 3;
+}
+
+@keyframes spotTransformStart {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes spotTransform {
+    from {
+        width: 0;
+    }
+
+    50% {
+        width: 350px;
+    }
+
+    to {
+        width: 194px;
+    }
 }
