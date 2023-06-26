@@ -4,10 +4,10 @@
 
   .block2__imgBlock_statuette_wrapper {
     overflow: hidden;
+    width: 100%;
     height: 1132px;
     bottom: 135px;
     justify-content: flex-end;
-    border: solid 6px #181818;
   }
 
   .block1 {
@@ -161,15 +161,22 @@
 
 @media (max-width: 570px) {
   .block1__textBlock1_text {
-    margin-left: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+
+  .block1__textBlock_wrapper {
+    height: 934px;
   }
 
   .block1__textBlock2_text {
-    margin-left: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .block1__textBlock1_title {
-    margin-left: 6px;
+    margin-left: 10px;
   }
 
   .block1__imgBlock_tableTop {
@@ -183,8 +190,8 @@
     bottom: 294px;
   }
 
-  .block1__textBlock_wrapper {
-    height: 1064px;
+  .block1__imgBlock_margins {
+    bottom: -109px;
   }
 
   .block1__textBlock2_text {
@@ -207,9 +214,31 @@
   }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 490px) {
   .block1__textBlock_wrapper {
-    height: 1102px;
+    height: 968px;
+  }
+}
+
+@media (max-width: 389px) {
+  .block1__textBlock1_title {
+    margin-top: 15px;
+  }
+
+  .block1__textBlock_wrapper {
+    height: 1083px;
+  }
+
+  .block1__textBlock1_text {
+    width: 291px;
+  }
+
+  .block1__textBlock2_text {
+    width: 291px;
+  }
+
+  .block1__imgBlock_margins {
+    bottom: -72px;
   }
 }
 
@@ -218,6 +247,11 @@
 @media (max-width: 1602px) {
   .block2__hideSpace {
     position: relative;
+  }
+
+  .block2__imgBlock_spotBottom {
+    position: relative;
+    bottom: 17px;
   }
 
   .block2__textBlock2_text {
@@ -232,6 +266,7 @@
 
   .block2__textBlock2 {
     top: 2065px;
+    top: 1058px;
   }
 
   .block2__imgBlock {
@@ -241,7 +276,7 @@
 
   .block2 {
     flex-direction: column;
-    height: 3100px;
+    height: 2100px;
 
     &__textBlock {
       &_wrapper {
@@ -250,9 +285,23 @@
     }
 
     &__imgBlock {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 1307px) {
+  .block2 {
+    height: 3100px;
+  }
+
+  .block2__imgBlock {
+    flex-direction: column;
+  }
+
+  .block2__textBlock2 {
+    top: 2065px;
   }
 }
 
@@ -393,7 +442,7 @@
   }
 
   .block2__textBlock1_title {
-    margin-left: 5px;
+    margin-left: 13.5px;
   }
 
   .block2__textBlock1_text {
@@ -403,6 +452,14 @@
 
   .block2__textBlock2_text {
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 330px) {
+  .block2__imgBlock_interface {
+    width: 123%;
+    position: relative;
+    left: 17px;
   }
 }
