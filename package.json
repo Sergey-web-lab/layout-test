@@ -1,11 +1,16 @@
 {
   "name": "gulp-site",
   "version": "1.0.0",
-  "description": "new gusp side",
+  "description": "new gulp site",
   "author": "Sergey",
+  "homepage": "https://Sergey-web-lab.github.io/layout-test",
+  "scripts": {
+    "deploy": "gh-pages -d dest"
+  },
   "devDependencies": {
     "browser-sync": "^2.29.1",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cssbeautify": "^3.0.1",
