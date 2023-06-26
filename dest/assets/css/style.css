@@ -93,6 +93,10 @@ html p {
     line-height: 170%;
 }
 
+.FWRegular {
+    font-weight: 400;
+}
+
 .block2 {
     position: relative;
     font-family: "Montserrat", sans-serif;
@@ -104,7 +108,7 @@ html p {
     display: flex;
 }
 
-.block2__hiddeSpace {
+.block2__hideSpace {
     background-image: url("../images/background.png");
     background-size: cover;
     background-size: 2000px;
@@ -113,7 +117,7 @@ html p {
     background-color: #181818;
     position: absolute;
     bottom: 0;
-    height: 96px;
+    height: 86px;
     width: 100%;
     z-index: 3;
 }
@@ -207,8 +211,13 @@ html p {
 }
 
 .block2__imgBlock_interface {
-    width: 842px;
-    height: 876px;
+    width: 60%;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.block2__imgBlock_interface_wrapper {
+    overflow: hidden;
 }
 
 .block2__imgBlock_spotTop {

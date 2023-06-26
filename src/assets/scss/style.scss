@@ -99,19 +99,21 @@ html {
 
 // task block 2
 
+.FWRegular {
+  font-weight: 400;
+}
+
 .block2 {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-image: url("../images/background.png");
-  // background-size: cover;
   background-size: 2000px;
   background-color: #181818;
-  // background-color: #2C2C2C;
   color: #FFF;
   margin-top: 35px;
   display: flex;
 
-  &__hiddeSpace {
+  &__hideSpace {
     background-image: url("../images/background.png");
     background-size: cover;
     background-size: 2000px;
@@ -120,7 +122,7 @@ html {
     background-color: #181818;
     position: absolute;
     bottom: 0;
-    height: 96px;
+    height: 86px;
     width: 100%;
     z-index: 3;
   }
@@ -219,8 +221,12 @@ html {
     }
 
     &_interface {
-      width: 842px;
-      height: 876px;
+      width: 60%;
+      height: max-content;
+
+      &_wrapper {
+        overflow: hidden;
+      }
     }
 
     &_spotTop {
